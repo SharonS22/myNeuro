@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_seizure"
+        android:icon="@drawable/ic_baseline_psychology_24"
+        android:title="@string/title_seizure" />
+
+    <item
+        android:id="@+id/navigation_medication"
+        android:icon="@drawable/ic_baseline_medical_services_24"
+        android:title="@string/title_medication" />
+
+    <item
+        android:id="@+id/navigation_reminder"
+        android:icon="@drawable/ic_baseline_schedule_24"
+        android:title="@string/title_reminder" />
+
+</menu>

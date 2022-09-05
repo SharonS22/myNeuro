@@ -1,0 +1,348 @@
+<resources>
+    <string name="app_name">MyNeuro</string>
+    <string name="title_activity_password">PasswordActivity</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="title_home">Home</string>
+    <string name="title_seizure">Seizure</string>
+    <string name="title_reminder">Reminder</string>
+    <string name="title_medication">Medication</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!-- Page Design -->
+    <string name="rect_bg">Rect bg</string>
+    <string name="logo">logo</string>
+
+    <!-- Home screen -->
+    <string name="seizure_free_since">Seizure Free Since</string>
+    <string name="my_profile">My Profile</string>
+    <string name="view_profile">View Profile</string>
+    <string name="profile_button">profile button</string>
+    <string name="title_activity_home">MainActivity</string>
+    <string name="setting">Setting</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="signout_btn">signout btn</string>
+    <string name="setting_btn">setting btn</string>
+
+    <!-- Login/Register/Reset -->
+    <string name="sign_up">SIGN UP</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="retype_password">Retype Password</string>
+    <string name="already_have_an_account_sign_in_here">Already have an account? Sign in Here</string>
+    <string name="show_password">Show Password</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="reset_password">RESET PASSWORD</string>
+    <string name="confirm">Confirm</string>
+    <string name="enter_your_username">Enter Your Username</string>
+    <string name="new_user_sign_up_here">New User? Sign Up here</string>
+
+    <!-- Splash Screen -->
+    <string name="hello">HELLO</string>
+    <string name="welcome_to_myneuro">Welcome to MyNeuro</string>
+
+    <!-- profile Page -->
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="chi_number">CHI Number</string>
+    <string name="gp_surgery">GP Surgery</string>
+    <string name="add_name">Add Name</string>
+    <string name="edit">Edit</string>
+
+    <!-- Medication Page -->
+    <string name="medication">Medication</string>
+    <string name="current_medications">Current Medications</string>
+    <string name="view_all_medications">View All Medications</string>
+    <string name="add_new_medication">Add New Medication</string>
+
+    <!-- Seizure Page -->
+    <string name="seizure">Seizure</string>
+    <string name="add_new_entry">Add New Entry</string>
+    <string name="past_entries">Past Seizures</string>
+
+    <!-- Reminder Page -->
+    <string name="schedule_reminder">Schedule Reminder</string>
+    <string name="reminder">Reminder</string>
+    <string name="view_schedule">View Schedule</string>
+    <string name="reset_password2">Reset Password</string>
+    <string name="account_setting">Account Setting</string>
+    <string name="delete_account">Delete Account</string>
+
+    <!-- About Page -->
+    <string name="about">About</string>
+    <string name="contact_info">If you ever have any questions, or need to get in contact with us about anything, you may email us at info@myneuro.com</string>
+    <string name="contact">Contact</string>
+    <string name="aim">Through better medication adherence we can tackle Epilepsy</string>
+    <string name="our_aim">Our Aim</string>
+    <string name="initial_release">- Initial Release</string>
+    <string name="version_1_0_february_2021">Version 1.0 - February 2021</string>
+    <string name="what_s_new">What\'s New?</string>
+    <string name="close">Close</string>
+    <string name="Copyright">Copyright @ 2021 myNeuro Software, LLC</string>
+
+    <!-- Seizure Page -->
+    <string name="date_month_year">Date - Month - Year</string>
+    <string name="enter_location">Enter Location</string>
+    <string name="location">Location</string>
+    <string name="hh_mm">HH:MM</string>
+    <string name="time">Time</string>
+    <string name="date">Date</string>
+    <string name="duration">Duration</string>
+    <string name="type">Type</string>
+    <string name="after_seizure">After Seizure</string>
+    <string name="fall">Fall</string>
+    <string name="jerking_movements">Jerking Movements</string>
+    <string name="head_movement">Head Movement</string>
+    <string name="facial_expression">Facial Expression</string>
+    <string name="awareness">Awareness</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="after_effect">After Effect</string>
+    <string name="save">Save</string>
+    <string name="tick_all_that_applies">(Tick all that applies)</string>
+    <string name="injury">Injury</string>
+    <string name="fully_aware">Fully Aware</string>
+    <string name="confused">Confused</string>
+    <string name="tired">Tired</string>
+
+    <string-array name="Add_Seizure_Type">
+        <item>Add Seizure Type</item>
+        <item>Absence</item>
+        <item>Atonic</item>
+        <item>Clonic</item>
+        <item>Complex Partial</item>
+        <item>Myoclonic</item>
+        <item>Simple Partial</item>
+        <item>Tonic</item>
+        <item>Tonic-Clonic</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="Add_Duration_mm">
+        <item>mm</item>
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+    </string-array>
+
+    <string-array name="Add_Duration_hh">
+        <item>hh</item>
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>05</item>
+    </string-array>
+
+    <string-array name="Add_Duration_ss">
+        <item>ss</item>
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+    </string-array>
+
+    <string-array name="Awareness">
+        <item>Add State</item>
+        <item>Fully Aware</item>
+        <item>Confused</item>
+        <item>Responds to Voice</item>
+        <item>Not Responsive</item>
+    </string-array>
+
+    <string-array name="facialexp">
+        <item>Add Expression</item>
+        <item>Twitching</item>
+        <item>Eyes Rolling</item>
+        <item>Eyes Blinking</item>
+        <item>Staring</item>
+        <item>No Expression</item>
+    </string-array>
+
+    <string-array name="headmov">
+        <item>Add Movement</item>
+        <item>Sudden Head Drop</item>
+        <item>Turn to 1-Side</item>
+        <item>Turns Side to Side</item>
+        <item>No Movement</item>
+    </string-array>
+
+    <string-array name="freq">
+        <item>Select</item>
+        <item>OD</item>
+        <item>BD</item>
+        <item>QD</item>
+    </string-array>
+
+    <!-- Medication Page -->
+    <string name="action_settings">Settings</string>
+    <string name="during_seizure">During Seizure</string>
+    <string name="add">Add</string>
+    <string name="name">Name</string>
+    <string name="enter_medication_name">Enter Medication Name</string>
+    <string name="frequency">Frequency</string>
+    <string name="dosage">Dosage</string>
+    <string name="enter">Enter</string>
+    <string name="month_s">Month(s)</string>
+    <string name="enter_month_s">Enter Month(s)</string>
+    <string name="week_s">Week(s)</string>
+    <string name="enter_week_s">Enter Week(s)</string>
+    <string name="day_s">Day(s)</string>
+    <string name="enter_day_s">Enter Day(s)</string>
+    <string name="indefinite">Indefinite</string>
+    <string name="don_t_know">Don\'t Know</string>
+    <string name="start_date">Start Date</string>
+    <string name="advanced">Advanced</string>
+    <string name="all_medications">All Medications</string>
+    <string name="body_shake">Body Shake</string>
+    <string name="recovery_time">Recovery Time</string>
+    <string name="rescue_medication">Rescue Medication</string>
+    <string name="incontinent">Incontinent</string>
+    <string name="delete_medication">Delete Medication</string>
+    <string name="medication_discontinued">Medication Discontinued</string>
+    <string name="repeat">Repeat</string>
+    <string name="off">Off</string>
+    <string name="on">On</string>
+    <string name="details">Details</string>
+    <string name="add_reminder">Add Reminder</string>
+
+    <!-- Reminder Page -->
+    <string-array name="interval">
+        <item>Repetition Interval</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item name = "Daily">24</item>
+    </string-array>
+
+    <string-array name="type">
+        <item>Repetition Type</item>
+        <item>Hour</item>
+    </string-array>
+
+
+</resources>

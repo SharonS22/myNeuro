@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:contentInsetStart="16dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20sp"
+        android:gravity="center_horizontal"
+        android:text="Edit Medication"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_below="@+id/toolbar"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtMedName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtdose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txtMedName"
+        android:paddingLeft="16dp"
+        android:text="@string/dosage"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/etdosage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMedName"
+        android:layout_marginStart="90dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Dosage"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtfrequency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etdosage"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="16dp"
+        android:text="@string/frequency"
+        android:textColor="@color/black" />
+
+    <Spinner
+        android:id="@+id/freq"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etdosage"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:entries="@array/freq"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtduration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtfrequency"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="16dp"
+        android:text="@string/duration"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/etduration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/freq"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Duration"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtstartdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etduration"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="16dp"
+        android:text="@string/start_date"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etdate"
+            android:layout_width="138dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/etduration"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="2dp"
+            android:hint="@string/date_month_year"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_below="@+id/etduration"
+            android:layout_marginStart="260dp"
+            app:srcCompat="@drawable/ic_baseline_date_range_24" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/cbdiscontinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtstartdate"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="16dp"
+        android:text="@string/medication_discontinued"
+        android:textColor="@color/Red" />
+
+    <ImageButton
+        android:id="@+id/btndelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cbdiscontinue"
+        android:layout_centerHorizontal="true"
+        android:onClick="deleteMed"
+        app:srcCompat="@drawable/ic_baseline_delete_outline_24" />
+
+    <TextView
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btndelete"
+        android:layout_marginTop="6dp"
+        android:text="@string/delete_medication"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/cb"
+        android:layout_below="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:onClick="editMedication"
+        android:text="Save" />
+    </RelativeLayout>
+</ScrollView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="-3dp"
+            android:layout_marginBottom="0dp"
+            android:background="?android:attr/windowBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:menu="@menu/bottom_nav_menu" />
+    </RelativeLayout>
+
+</RelativeLayout>

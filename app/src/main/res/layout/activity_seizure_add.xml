@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".seizure_add">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:contentInsetStart="16dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <TextView
+        android:id="@+id/seizurene"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/add_new_entry"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:paddingTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginStart="8dp"
+        android:paddingLeft="16dp"
+        android:layout_marginEnd="8dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/date"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="98dp"
+                android:layout_marginTop="20dp"
+                android:hint="@string/date_month_year"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="250dp"
+                android:layout_marginTop="32dp"
+                app:srcCompat="@drawable/ic_baseline_date_range_24" />
+
+            <TextView
+                android:id="@+id/txtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etdate"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="13dp"
+                android:text="@string/time"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/ettime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etdate"
+                android:layout_marginStart="103dp"
+                android:layout_marginTop="3dp"
+                android:hint="@string/hh_mm"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etdate"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="175dp"
+                android:layout_marginTop="12dp"
+                app:srcCompat="@drawable/ic_baseline_more_time_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ettime"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="13dp"
+                android:text="@string/location"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:id="@+id/etlocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ettime"
+                android:layout_marginStart="103dp"
+                android:layout_marginTop="2dp"
+                android:hint="@string/enter_location"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etlocation"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="13dp"
+                android:text="@string/type"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+            <Spinner
+                android:id="@+id/typelist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etlocation"
+                android:layout_marginStart="103dp"
+                android:layout_marginTop="13dp"
+                android:entries="@array/Add_Seizure_Type" />
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/typelist"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="21dp"
+                android:text="@string/duration"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/timemm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/typelist"
+                android:layout_marginStart="103dp"
+                android:layout_marginTop="13dp"
+                android:entries="@array/Add_Duration_mm" />
+
+            <Spinner
+                android:id="@+id/timess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/typelist"
+                android:layout_alignRight="@id/timemm"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="78dp"
+                android:layout_marginRight="-122dp"
+                android:entries="@array/Add_Duration_ss" />
+
+            <TextView
+                android:id="@+id/txtsubheading"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textView2"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/during_seizure"
+                android:textColor="@color/purple_500"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtawareness"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_below="@id/txtsubheading"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/awareness"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/awareness"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_below="@id/txtsubheading"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="1dp"
+                android:entries="@array/Awareness" />
+
+            <TextView
+                android:id="@+id/txtfacialexp"
+                android:layout_width="139dp"
+                android:layout_height="33dp"
+                android:layout_below="@id/txtawareness"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="13dp"
+                android:text="@string/facial_expression"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/facialexp"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_below="@id/awareness"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="22dp"
+                android:entries="@array/facialexp" />
+
+            <TextView
+                android:id="@+id/txtheadmov"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_below="@id/txtfacialexp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="13dp"
+                android:text="@string/head_movement"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/headmov"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/facialexp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="2dp"
+                android:entries="@array/headmov" />
+
+            <TextView
+                android:id="@+id/txtjerking"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_below="@id/txtheadmov"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="17dp"
+                android:text="@string/jerking_movements"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swtjerking"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/txtheadmov"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@id/txtjerking"
+                android:textOff="@string/no"
+                android:textOn="@string/yes"
+                android:thumb="@drawable/thumb"
+                app:showText="true"
+                app:track="@drawable/track" />
+
+            <TextView
+                android:id="@+id/txtfall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtjerking"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="14dp"
+                android:text="@string/fall"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swtfall"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/swtjerking"
+                android:layout_marginStart="74dp"
+                android:layout_marginTop="-1dp"
+                android:layout_toEndOf="@id/txtfall"
+                android:textOff="@string/no"
+                android:textOn="@string/yes"
+                android:thumb="@drawable/thumb"
+                app:showText="true"
+                app:track="@drawable/track" />
+
+            <TextView
+                android:id="@+id/after"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/txtfall"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/after_seizure"
+                android:textColor="@color/purple_500"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtaftereffect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/after"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="13dp"
+                android:text="@string/after_effect"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtaftereffectdet"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtaftereffect"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="-21dp"
+                android:layout_toEndOf="@id/txtaftereffect"
+                android:text="@string/tick_all_that_applies"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/aware"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/txtaftereffect"
+                android:layout_marginTop="5dp"
+                android:text="@string/fully_aware" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/confused"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/aware"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-27dp"
+                android:layout_marginEnd="30dp"
+                android:text="@string/confused" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/tired"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/aware"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="-29dp"
+                android:layout_toEndOf="@id/aware"
+                android:text="@string/tired" />
+
+            <TextView
+                android:id="@+id/txtinjury"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/confused"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/injury"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swtinjury"
+                android:layout_width="70dp"
+                android:layout_height="37dp"
+                android:layout_below="@id/confused"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@id/txtinjury"
+                android:textOff="@string/no"
+                android:textOn="@string/yes"
+                android:thumb="@drawable/thumb"
+                app:showText="true"
+                app:track="@drawable/track" />
+
+            <Button
+                android:id="@+id/btnsaveentry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtinjury"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="148dp"
+                android:text="@string/save" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_below="@+id/btnsaveentry"
+                android:layout_marginStart="8dp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:background="?android:attr/windowBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:menu="@menu/bottom_nav_menu" />
+    </RelativeLayout>
+
+</RelativeLayout>
